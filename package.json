@@ -1,7 +1,9 @@
 {
   "name": "mpondev.com",
+  "homepage": "https://mpondev.com",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "My personal website",
   "type": "module",
   "scripts": {
     "dev": "vite",

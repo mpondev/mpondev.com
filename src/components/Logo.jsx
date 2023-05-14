@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 import './Logo.scss';
 
 function Logo({ sizeEm }) {
-  // const { logosize } = props;
   return (
     <div className="logo" style={{ fontSize: `${sizeEm}em` }}>
       <span className="mpn">mp</span>
@@ -11,5 +11,9 @@ function Logo({ sizeEm }) {
     </div>
   );
 }
+
+Logo.propTypes = {
+  sizeEm: PropTypes.number,
+};
 
 export default Logo;

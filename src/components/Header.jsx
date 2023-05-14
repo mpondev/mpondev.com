@@ -1,5 +1,13 @@
+import Logo from './Logo';
+import './Header.scss';
+
 function Header() {
-  return <div>Header</div>;
+  return (
+    <div className="header">
+      <Logo sizeEm="1.8" />
+      <div className="header-right"></div>
+    </div>
+  );
 }
 
 export default Header;

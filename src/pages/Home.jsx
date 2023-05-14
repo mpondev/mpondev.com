@@ -1,5 +1,7 @@
+import '../components/Header.scss';
+
 function Home() {
-  return <div>Home</div>;
+  return <div className="home"></div>;
 }
 
 export default Home;

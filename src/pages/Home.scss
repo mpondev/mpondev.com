@@ -1,0 +1,27 @@
+.home {
+  height: 100vh;
+
+  .intro-left {
+    flex: 1;
+    display: flex;
+    padding: 5em;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    & h2 {
+      font-size: 3em;
+      padding: 1em;
+      font-weight: 300;
+    }
+
+    & h1 {
+      font-size: 6em;
+      padding: 1em;
+    }
+  }
+
+  .intro-right {
+    flex: 1;
+  }
+}

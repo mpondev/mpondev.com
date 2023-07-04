@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Home from './pages/Home';
+
+import Home from './pages/home/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './App.css';
 
 const Layout = () => {
   return (

@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 
-import Home from './pages/home/Home';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Home from './pages/Home/Home';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Tetris from './pages/Tetris/Tetris';
 
 const Layout = () => {
   return (
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: 'tetris',
+        element: <Tetris />,
       },
     ],
   },

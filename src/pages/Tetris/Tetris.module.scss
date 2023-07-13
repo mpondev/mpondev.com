@@ -1,5 +1,12 @@
 .tetris {
+  position: relative;
   height: 100vh;
   text-align: center;
   padding: 2em;
+
+  .startBtn {
+    font-size: 1.2em;
+    color: var(--color-prim);
+    cursor: pointer;
+  }
 }

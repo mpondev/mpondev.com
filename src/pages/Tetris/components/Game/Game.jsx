@@ -1,20 +1,13 @@
 import PropTypes from 'prop-types';
-import { useGameOver } from '../../hooks/useGameOver';
-import styles from './Game.module.scss';
+import { useBoard } from '../../hooks/useBoard';
+import Board from '../Board/Board';
 
-function Game({ rows, columns }) {
-  const [gameOver, setGameOver, resetGameOver] = useGameOver();
-
-  function start() {
-    resetGameOver();
-    console.log(`Start gameOver is ${gameOver}`);
-  }
+function Game({ rows, columns, setGameOver }) {
+  const [board, setBoard] = useBoard({ rows, columns });
 
   return (
-    <div className="game">
-      <button className={styles.startBtn} onClick={start}>
-        Start
-      </button>
+    <div>
+      <Board board={board} />
     </div>
   );
 }
@@ -22,6 +15,7 @@ function Game({ rows, columns }) {
 Game.propTypes = {
   rows: PropTypes.number,
   columns: PropTypes.number,
+  setGameOver: PropTypes.func,
 };
 
 export default Game;

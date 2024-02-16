@@ -1,10 +1,36 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import Badge from '@/components/Badge.astro';
 ---
 
 <Layout
   title="Portfolio de mpondev - Desarrollador y Programador Web"
-  description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web. Especializado en crear aplicaciones únicas"
->
-  <main></main>
+  description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web. Especializado en crear aplicaciones únicas">
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full size-16 mb-4"
+        src="./Avatar.webp"
+        alt="mpondev photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-6 pb-10">
+        Hey, soy Mario Ponce<a
+          href="https://www.linkedin.com/in/mario-ponce-04920619/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center hover:scale-105 transition">
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        <span class="text-primary-200">Desarrollador Web Fullstack.</span>
+        <span class="text-red-200">De Valencia, España.</span>
+        <span class="text-sky-200"
+          >Especializado en crear aplicaciones únicas</span
+        >
+      </h2>
+
+      <ul></ul>
+    </section>
+  </main>
 </Layout>

@@ -1,6 +1,11 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Badge from '@/components/Badge.astro';
+import SocialPill from '@/components/SocialPill.astro';
+
+import LinkedInIcon from '../icons/LinkedIn.astro';
+import GitHubIcon from '../icons/GitHub.astro';
+import MailIcon from '../icons/Mail.astro';
 ---
 
 <Layout
@@ -30,7 +35,20 @@ import Badge from '@/components/Badge.astro';
         >
       </h2>
 
-      <ul></ul>
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/mario-ponce-04920619/">
+          <LinkedInIcon class="size-5" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/mpondev">
+          <GitHubIcon class="size-5" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:mario@mpondev.com">
+          <MailIcon class="size-5" />
+          mario@mpondev.com
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>

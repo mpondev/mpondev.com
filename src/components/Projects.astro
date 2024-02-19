@@ -1,8 +1,11 @@
 ---
-import ReactIcon from '../icons/React.astro';
-import ReduxIcon from '../icons/Redux.astro';
-import MongoDBIcon from '../icons/MongoDB.astro';
-// import TailwindIcon from '../icons/Tailwind.astro';
+import LinkButton from './LinkButton.astro';
+
+import GitHubIcon from '@/icons/GitHub.astro';
+import WorldWideWebIcon from '@/icons/WorldWideWeb.astro';
+import ReactIcon from '@/icons/React.astro';
+import ReduxIcon from '@/icons/Redux.astro';
+import MongoDBIcon from '@/icons/MongoDB.astro';
 
 const TAGS = {
   REACT: {
@@ -27,7 +30,7 @@ const PROJECTS = [
     title: 'ProShop',
     description:
       'Full-featured shopping cart with PayPal and credit/debit payments.',
-    link: '',
+    link: 'https://proshop.mpondev.com',
     github: 'https://github.com/mpondev/proshop',
     image: '/projects/ProShop.webp',
     tags: [TAGS.REACT, TAGS.REDUX, TAGS.MONGODB],
@@ -35,28 +38,43 @@ const PROJECTS = [
 ];
 ---
 
-{
-  PROJECTS.map(({ description, github, image, link, tags, title }) => (
-    <article>
-      <h3 class="text-2xl font-semibold text-primary-200 mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="flex gap-x-2 flex-row mb-2">
-        {tags.map(tag => (
-          <li>
-            <span
-              class={`${tag.class} flex gap-x-2 rounded-full text-xs py-1 px-2`}>
-              <tag.icon class="size-4" />
-              {tag.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        loading="lazy"
-        class="rounded shadow-2xl shadow-white/10"
-        src={image}
-        alt={`Captura de pantalla del proyecto ${title}`}
-      />
-    </article>
-  ))
-}
+<section class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ description, github, image, link, tags, title }) => (
+      <article>
+        <h3 class="text-2xl font-semibold text-primary-200 mb-2">{title}</h3>
+        <p class="text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex gap-x-2 flex-row mb-2">
+          {tags.map(tag => (
+            <li>
+              <span
+                class={`${tag.class} flex gap-x-2 rounded-full text-xs py-1 px-2`}>
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <img
+          loading="lazy"
+          class="rounded shadow-2xl shadow-white/10"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${title}`}
+        />
+
+        <footer class="flex gap-x-2 mt-4 justify-start">
+          {github && (
+            <LinkButton href={github}>
+              <GitHubIcon class="size-6" />
+              Ver código fuente
+            </LinkButton>
+          )}
+          <LinkButton href={link}>
+            <WorldWideWebIcon class="size-6" />
+            Ir al sitio web
+          </LinkButton>
+        </footer>
+      </article>
+    ))
+  }
+</section>

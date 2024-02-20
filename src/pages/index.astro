@@ -16,14 +16,15 @@ import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
 <Layout
   title="Portfolio de mpondev - Desarrollador y Programador Web"
   description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web. Especializado en crear aplicaciones únicas">
-  <main>
-    <SectionContainer id="top" class="py-44 pb-24">
+  <main class="px-4">
+    <SectionContainer id="top" class="py-44 pb-32">
       <img
         class="rounded-full size-16 mb-4"
         src="./Avatar.webp"
         alt="mpondev photo"
       />
-      <h1 class="flex flex-row gap-x-6 pb-10 text-5xl font-bold text-white">
+      <h1
+        class="md:text-4xl flex flex-row gap-x-2 pb-6 text-3xl font-bold text-white lg:pb-10 lg:text-5xl">
         Hey, soy Mario Ponce<a
           href="https://www.linkedin.com/in/mario-ponce-04920619/"
           target="_blank"
@@ -32,10 +33,13 @@ import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-wrap text-2xl">
-        <span class="text-primary-200">Desarrollador Web Fullstack.</span>
-        <span class="text-red-200">De Valencia, España.</span>
-        <span class="text-sky-200"
+      <h2
+        class="text-wrap text-xl lg:text-2xl max-w-[700px] text-black dark:text-white">
+        <span class="text-primary-800 dark:text-primary-200"
+          >Desarrollador Web Fullstack.</span
+        >
+        <span class="text-red-800 dark:text-red-200">De Valencia, España.</span>
+        <span class="text-sky-800 dark:text-sky-200"
           >Especializado en crear aplicaciones únicas</span
         >
       </h2>
@@ -57,7 +61,8 @@ import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
     </SectionContainer>
 
     <SectionContainer id="proyectos">
-      <h2 class="mb-6 flex items-center gap-x-3 text-3xl font-semibold">
+      <h2
+        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold text-black/80 dark:text-white/80">
         <CodeIcon class="size-7" />Proyectos
       </h2>
       <Projects />

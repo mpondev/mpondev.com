@@ -1,5 +1,9 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+
 <header
-  class="sticky top-0 z-10 mx-auto flex w-full items-center justify-center py-5 xl:w-[1120px]">
+  class="sticky top-0 z-10 mx-auto flex w-full items-center justify-center gap-x-3 py-5 xl:w-[1120px]">
   <nav
     class="flex rounded-lg border border-black bg-black/30 px-2 py-1 backdrop-blur-2xl">
     <a
@@ -19,4 +23,5 @@
       href="/#contacto">Contacto</a
     >
   </nav>
+  <ThemeToggle />
 </header>

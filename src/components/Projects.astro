@@ -3,9 +3,9 @@ import LinkButton from './LinkButton.astro';
 
 import GitHubIcon from '@/icons/GitHub.astro';
 import WorldWideWebIcon from '@/icons/WorldWideWeb.astro';
-import ReactIcon from '@/icons/React.astro';
-import ReduxIcon from '@/icons/Redux.astro';
-import MongoDBIcon from '@/icons/MongoDB.astro';
+import ReactIcon from '@/icons/skills/React.astro';
+import ReduxIcon from '@/icons/skills/Redux.astro';
+import MongoDBIcon from '@/icons/skills/MongoDB.astro';
 
 const TAGS = {
   REACT: {
@@ -42,13 +42,15 @@ const PROJECTS = [
   {
     PROJECTS.map(({ description, github, image, link, tags, title }) => (
       <article>
-        <h3 class="text-2xl font-semibold text-primary-200 mb-2">{title}</h3>
-        <p class="text-lg mb-4 text-pretty">{description}</p>
-        <ul class="flex gap-x-2 flex-row mb-2">
+        <h3 class="mb-2 text-2xl font-semibold text-primary-800 dark:text-primary-200">
+          {title}
+        </h3>
+        <p class="mb-4 text-pretty text-lg">{description}</p>
+        <ul class="mb-2 flex flex-row gap-x-2">
           {tags.map(tag => (
             <li>
               <span
-                class={`${tag.class} flex gap-x-2 rounded-full text-xs py-1 px-2`}>
+                class={`${tag.class} flex gap-x-2 rounded-full border border-white/10 px-2 py-1 text-xs`}>
                 <tag.icon class="size-4" />
                 {tag.name}
               </span>
@@ -62,7 +64,7 @@ const PROJECTS = [
           alt={`Captura de pantalla del proyecto ${title}`}
         />
 
-        <footer class="flex gap-x-2 mt-4 justify-start">
+        <footer class="mt-4 flex justify-start gap-x-2">
           {github && (
             <LinkButton href={github}>
               <GitHubIcon class="size-6" />

@@ -1,10 +1,23 @@
 ---
-
+import About from '@/components/cv/About.astro';
+import Education from '@/components/cv/Education.astro';
+import Experience from '@/components/cv/Experience.astro';
+import Hero from '@/components/cv/Hero.astro';
+import KeyboardManager from '@/components/cv/KeyboardManager.astro';
+import Projects from '@/components/cv/Projects.astro';
+import Skills from '@/components/cv/Skills.astro';
 ---
 
 <main>
-  <h1>Curriculum Vitae</h1>
+  <Hero />
+  <About />
+  <Experience />
+  <Education />
+  <Projects />
+  <Skills />
 </main>
+
+<KeyboardManager />
 
 <style>
   html {

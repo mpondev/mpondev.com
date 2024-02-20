@@ -1,8 +1,8 @@
 {
   "basics": {
     "name": "Mario Ponce Polo",
-    "label": "Programmer",
-    "image": "",
+    "label": "Full Stack Developer",
+    "image": "./Avatar.webp",
     "email": "mario@mpondev.com",
     "phone": "(34) 670283093",
     "url": "https://mpondev.com",
@@ -12,7 +12,7 @@
       "postalCode": "46008",
       "city": "Valencia",
       "countryCode": "ES",
-      "region": "Valencia"
+      "region": "España"
     },
     "profiles": [
       {

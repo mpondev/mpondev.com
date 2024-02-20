@@ -16,9 +16,14 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "network": "LinkedIn",
+        "username": "Mario Ponce",
+        "url": "https://www.linkedin.com/in/mario-ponce-04920619/"
+      },
+      {
+        "network": "GitHub",
+        "username": "mpondev",
+        "url": "https://github.com/mpondev"
       }
     ]
   },

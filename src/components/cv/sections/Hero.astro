@@ -1,35 +1,85 @@
 ---
 import { basics } from 'cv-es.json';
 import Section from '@/components/cv/Section.astro';
+import MailCV from '@/icons/MailCV.astro';
+import Phone from '@/icons/Phone.astro';
+import GitHub from '@/icons/GitHub.astro';
+import LinkedIn from '@/icons/LinkedIn.astro';
+import WorldMap from '@/icons/WorldMap.astro';
 
 const { label, name, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
+
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub,
+  LinkedIn,
+};
 ---
 
 <Section>
-  <div class="container">
-    <div>
-      <h1>{name}</h1>
-      <h2>{label}</h2>
-      <span>
+  <div class="flex flex-row items-center justify-between gap-4">
+    <div class="flex flex-col gap-2 pr-8">
+      <h1 class="text-3xl m-0">{name}</h1>
+      <h2 class="text-[#444] font-medium text-[1.1rem] text-balance">
+        {label}
+      </h2>
+      <span class="text-[#666] flex items-center gap-1 text-sm tracking-tight">
+        <WorldMap />
         {city}, {region}
       </span>
-      <footer>
+      <footer class="flex gap-1 mt-2">
         {
           email && (
             <a
               href={`mailto:${email}`}
+              class="text-[#777] inline-flex items-center justify-center border border-[#eee] p-1 h-8 w-8 rounded-md transition hover:bg-[#eee] hover:border-[#ddd]"
               title={`Enviar un correo electrónico a ${name} a la dirección ${email}`}
               target="_blank"
               rel="noopener no referrer"
-            />
+            >
+              <MailCV />
+            </a>
           )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              class="text-[#777] inline-flex items-center justify-center border border-[#eee] p-1 h-8 w-8 rounded-md transition hover:bg-[#eee] hover:border-[#ddd]"
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="noopener no referrer"
+            >
+              <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+
+            return (
+              <a
+                href={url}
+                class="text-[#777] inline-flex items-center justify-center border border-[#eee] p-1 h-8 w-8 rounded-md transition hover:bg-[#eee] hover:border-[#ddd]"
+                title={`Visitar el perfil de ${name} en ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            );
+          })
         }
       </footer>
     </div>
 
     <figure>
-      <img src={image} alt="" />
+      <img
+        src={image}
+        alt={`Imagen de ${name}`}
+        class="aspect-square object-cover w-32 rounded-2xl"
+      />
     </figure>
   </div>
 </Section>

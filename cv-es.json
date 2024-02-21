@@ -97,15 +97,74 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "HTML",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "JavaScript", "Backend", "Fullstack"]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Master",
+      "keywords": [
+        "Bases de Datos",
+        "Almacenamiento de Datos",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Master",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Master",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     }
   ],
   "languages": [
     {
-      "language": "English",
+      "language": "Spanish",
       "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
     }
   ],
   "interests": [

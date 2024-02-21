@@ -181,12 +181,49 @@
   ],
   "projects": [
     {
-      "name": "Project",
+      "name": "Project1",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016", "Won award at AIHacks 2017"],
+      "url": "https://project.com/",
+      "isActive": true
+    },
+    {
+      "name": "Project2",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Description...",
       "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "url": "https://project.com/",
+      "isActive": true
+    },
+    {
+      "name": "Project3",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/",
+      "isActive": false
+    },
+    {
+      "name": "Project4",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/",
+      "isActive": true
+    },
+    {
+      "name": "Project5",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": ["Won award at AIHacks 2016"],
+      "url": "https://project.com/",
+      "isActive": false
     }
   ]
 }

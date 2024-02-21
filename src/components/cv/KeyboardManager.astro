@@ -73,15 +73,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     hotkey: string;
   }
 
-  interface InfoWithHandler extends Info {
-    handler: () => void;
-  }
-
-  interface NinjaElement extends Element {
-    data: Array<InfoWithHandler>;
-  }
-
-  const ninja = document.querySelector('ninja-keys') as NinjaElement;
+  const ninja = document.querySelector('ninja-keys');
 
   if (ninja != null) {
     const info = ninja.getAttribute('data-info') ?? '[]';

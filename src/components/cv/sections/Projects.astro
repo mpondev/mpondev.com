@@ -9,7 +9,7 @@ import { projects } from '@/cv';
     {
       projects.map(({ url, description, name, highlights, isActive }) => (
         <li>
-          <article class="rounded-md border border-[#f2f2f2] gap-4 flex flex-col p-4 h-full">
+          <article class="rounded-md border border-[#f2f2f2] gap-4 flex flex-col p-4 h-full [@media(width<=700px)]:border-none [@media(width<=700px)]:shadow-[0_1px_1px_#f2f2f2] [@media(width<=700px)]:px-0 [@media(width<=700px)]:pt-0">
             <header class="flex-1">
               <h3 class="mb-1">
                 <a

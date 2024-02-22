@@ -1,6 +1,7 @@
 ---
 import { basics } from 'cv-es.json';
 import Section from '@/components/cv/Section.astro';
+
 import MailCV from '@/icons/MailCV.astro';
 import Phone from '@/icons/Phone.astro';
 import GitHub from '@/icons/GitHub.astro';
@@ -28,17 +29,19 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
     class="flex flex-row items-center justify-between gap-4 [@media(width<=700px)]:flex-col-reverse"
   >
     <div
-      class="flex flex-col gap-2 pr-8 [@media(width<=700px)]:justify-center [@media(width<=700px)]:items-center [@media(width<=700px)]:pr-0 [@media(width<=700px)]:text-center"
+      class="flex flex-col gap-2 pr-8 [@media(width<=700px)]:items-center [@media(width<=700px)]:justify-center [@media(width<=700px)]:pr-0 [@media(width<=700px)]:text-center"
     >
-      <h1 class="text-3xl m-0">{name}</h1>
-      <h2 class="text-[#444] font-medium text-[1.1rem] text-balance">
+      <h1 class="m-0 text-3xl">{name}</h1>
+      <h2 class="text-balance text-[1.1rem] font-medium text-neutral-600">
         {label}
       </h2>
-      <span class="text-[#666] flex items-center gap-1 text-sm tracking-tight">
+      <span
+        class="flex items-center gap-1 text-sm tracking-tight text-neutral-500"
+      >
         <WorldMap />
         {city}, {region}
       </span>
-      <footer class="hidden print:block text-zinc-600 text-[0.65rem]">
+      <footer class="hidden text-[0.65rem] text-zinc-600 print:block">
         {printInfo}
       </footer>
       <footer class="flex gap-1 mt-2 print:hidden">
@@ -46,7 +49,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
           email && (
             <a
               href={`mailto:${email}`}
-              class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-md transition hover:bg-gray-200 hover:border-[#ddd]"
+              class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-gray-200"
               title={`Enviar un correo electrónico a ${name} a la dirección ${email}`}
               target="_blank"
               rel="noopener no referrer"
@@ -59,7 +62,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
           phone && (
             <a
               href={`tel:${phone}`}
-              class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-md transition hover:bg-gray-200 hover:border-[#ddd]"
+              class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-gray-200"
               title={`Llamar por teléfono a ${name} al número ${phone}`}
               target="_blank"
               rel="noopener no referrer"
@@ -75,7 +78,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
             return (
               <a
                 href={url}
-                class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-md transition hover:bg-gray-200 hover:border-[#ddd]"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-gray-200"
                 title={`Visitar el perfil de ${name} en ${network}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -92,7 +95,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
       <img
         src={image}
         alt={`Imagen de ${name}`}
-        class="aspect-square object-cover w-32 rounded-2xl"
+        class="aspect-square w-32 rounded-2xl object-cover"
       />
     </figure>
   </div>

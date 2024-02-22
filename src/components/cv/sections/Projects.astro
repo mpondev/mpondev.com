@@ -17,6 +17,7 @@ import { projects } from '@/cv';
                   <a
                     href={url}
                     title={`Ver el proyecto ${name}`}
+                    target="_blank"
                     class="text-gray-950 hover:underline"
                   >
                     {name}
@@ -36,7 +37,7 @@ import { projects } from '@/cv';
               </header>
               <footer class="flex flex-wrap gap-1 text-[0.6rem]">
                 {highlights.map(highlight => (
-                  <span class="rounded-md bg-[#eee] text-[#444] text-xs font-medium px-2 py-1">
+                  <span class="rounded-md bg-gray-100 text-[#444] text-xs font-medium px-2 py-1">
                     {highlight}
                   </span>
                 ))}

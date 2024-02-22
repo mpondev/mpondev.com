@@ -1,17 +1,51 @@
 ---
 import Section from '@/components/cv/Section.astro';
-
 import { skills } from '@/cv';
+
+import CSS from '@/icons/skills/CSS.astro';
+import Express from '@/icons/skills/Express.astro';
+import Git from '@/icons/skills/Git.astro';
+import GitHub from '@/icons/GitHub.astro';
+import HTML5 from '@/icons/skills/HTML5.astro';
+import JavaScript from '@/icons/skills/JavaScript.astro';
+import MongoDB from '@/icons/skills/MongoDB.astro';
+import Node from '@/icons/skills/Node.astro';
+import Postman from '@/icons/skills/Postman.astro';
+import React from '@/icons/skills/React.astro';
+import ReactRouter from '@/icons/skills/ReactRouter.astro';
+import Sass from '@/icons/skills/Sass.astro';
+import Tailwind from '@/icons/skills/Tailwind.astro';
+
+const SKILL_ICONS: Record<string, any> = {
+  CSS,
+  Express,
+  Git,
+  GitHub,
+  HTML5,
+  JavaScript,
+  MongoDB,
+  Node,
+  Postman,
+  React,
+  ReactRouter,
+  Sass,
+  Tailwind,
+};
 ---
 
-<Section title="Skills">
+<Section title="Habilidades">
   <ul class="inline-flex gap-2 flex-wrap">
     {
-      skills.map(({ name }) => (
-        <li class="rounded-md bg-[#eee] text-black text-sm font-medium py-1 px-2">
-          <span>{name}</span>
-        </li>
-      ))
+      skills.map(({ name }) => {
+        const iconName = name;
+        const Icon = SKILL_ICONS[iconName];
+
+        return (
+          <li class="rounded-md bg-gray-200 text-black text-[0.8rem] font-medium py-1 px-2 flex items-center gap-1">
+            {Icon && <Icon class="size-4" />} <span>{name}</span>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>

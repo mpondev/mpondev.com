@@ -46,7 +46,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
           email && (
             <a
               href={`mailto:${email}`}
-              class="text-[#777] inline-flex items-center justify-center border border-[#eee] p-1 h-8 w-8 rounded-md transition hover:bg-[#eee] hover:border-[#ddd]"
+              class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-md transition hover:bg-gray-200 hover:border-[#ddd]"
               title={`Enviar un correo electrónico a ${name} a la dirección ${email}`}
               target="_blank"
               rel="noopener no referrer"
@@ -59,7 +59,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
           phone && (
             <a
               href={`tel:${phone}`}
-              class="text-[#777] inline-flex items-center justify-center border border-[#eee] p-1 h-8 w-8 rounded-md transition hover:bg-[#eee] hover:border-[#ddd]"
+              class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-md transition hover:bg-gray-200 hover:border-[#ddd]"
               title={`Llamar por teléfono a ${name} al número ${phone}`}
               target="_blank"
               rel="noopener no referrer"
@@ -75,7 +75,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
             return (
               <a
                 href={url}
-                class="text-[#777] inline-flex items-center justify-center border border-[#eee] p-1 h-8 w-8 rounded-md transition hover:bg-[#eee] hover:border-[#ddd]"
+                class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-md transition hover:bg-gray-200 hover:border-[#ddd]"
                 title={`Visitar el perfil de ${name} en ${network}`}
                 target="_blank"
                 rel="noopener noreferrer"

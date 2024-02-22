@@ -8,7 +8,7 @@ import { work } from '@/cv';
   <ul class="flex flex-col gap-8">
     {
       work.map(
-        ({ name, startDate, endDate, position, summary, highlights }) => {
+        ({ name, startDate, endDate, position, summary, highlights, url }) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : 'Actual';
@@ -17,13 +17,22 @@ import { work } from '@/cv';
           return (
             <li>
               <article>
-                <header class="flex justify-between items-start mb-1">
+                <header class="mb-1 flex items-start justify-between">
                   <div>
-                    <h3 class="font-medium text-[#111]">{name}</h3>
-                    <h4 class="font-normal text-[#222]">{position}</h4>
+                    <h3 class="font-medium text-gray-950">
+                      <a
+                        href={url}
+                        title={`Ver ${name}`}
+                        target="_blank"
+                        class="text-gray-950"
+                      >
+                        {name}
+                      </a>
+                    </h3>
+                    <h4 class="font-normal text-gray-900">{position}</h4>
                   </div>
 
-                  <time class="text-sm text-[#555] min-w-24 [@media(width<=700px)]:text-right">
+                  <time class="min-w-24 text-sm text-zinc-600 [@media(width<=700px)]:text-right">
                     {years}
                   </time>
                 </header>

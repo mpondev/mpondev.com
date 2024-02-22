@@ -1,59 +1,27 @@
 ---
+import LayoutCV from '@/layouts/LayoutCV.astro';
+
 import About from '@/components/cv/sections/About.astro';
 import Education from '@/components/cv/sections/Education.astro';
 import Experience from '@/components/cv/sections/Experience.astro';
 import Hero from '@/components/cv/sections/Hero.astro';
-import KeyboardManager from '@/components/cv/KeyboardManager.astro';
 import Projects from '@/components/cv/sections/Projects.astro';
 import Skills from '@/components/cv/sections/Skills.astro';
+import KeyboardManager from '@/components/cv/KeyboardManager.astro';
+
+import { basics } from '@/cv';
+const { name } = basics;
 ---
 
-<main class="p-16 m-auto w-full">
-  <Hero />
-  <About />
-  <Experience />
-  <Education />
-  <Projects />
-  <Skills />
-</main>
+<LayoutCV title={`Portfolioi de ${name}`}>
+  <main class="p-16 m-auto w-full">
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <Projects />
+    <Skills />
+  </main>
 
-<KeyboardManager />
-
-<style is:global>
-  html {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      'Courier New',
-      Courier,
-      monospace;
-    background: #fff;
-    letter-spacing: -0.025rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      'Segoe UI',
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      'Open Sans',
-      'Helvetica Neue',
-      sans-serif;
-  }
-
-  p {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    text-wrap: pretty;
-  }
-</style>
+  <KeyboardManager />
+</LayoutCV>

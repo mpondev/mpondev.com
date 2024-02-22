@@ -187,7 +187,8 @@
       "description": "Description...",
       "highlights": ["Won award at AIHacks 2016", "Won award at AIHacks 2017"],
       "url": "https://project.com/",
-      "isActive": true
+      "isActive": true,
+      "github": "https://mpondev.com"
     },
     {
       "name": "Project2",

@@ -1,5 +1,6 @@
 ---
 import Section from '@/components/cv/Section.astro';
+import GitHub from '@/icons/GitHub.astro';
 
 import { projects } from '@/cv';
 ---
@@ -7,32 +8,43 @@ import { projects } from '@/cv';
 <Section title="Proyectos">
   <ul class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-4">
     {
-      projects.map(({ url, description, name, highlights, isActive }) => (
-        <li>
-          <article class="rounded-md border border-[#f2f2f2] gap-4 flex flex-col p-4 h-full [@media(width<=700px)]:border-none [@media(width<=700px)]:shadow-[0_1px_1px_#f2f2f2] [@media(width<=700px)]:px-0 [@media(width<=700px)]:pt-0">
-            <header class="flex-1">
-              <h3 class="mb-1">
-                <a
-                  href={url}
-                  title={`Ver el proyecto ${name}`}
-                  class="text-[#111] hover:underline"
-                >
-                  {name}
-                </a>
-                {isActive && <span class="text-green-500">&bull;</span>}
-              </h3>
-              <p class="text-xs leading-5 mb-1">{description}</p>
-            </header>
-            <footer class="flex flex-wrap gap-1 text-[0.6rem]">
-              {highlights.map(highlight => (
-                <span class="rounded-md bg-[#eee] text-[#444] text-xs font-medium px-2 py-1">
-                  {highlight}
-                </span>
-              ))}
-            </footer>
-          </article>
-        </li>
-      ))
+      projects.map(
+        ({ url, description, name, highlights, isActive, github }) => (
+          <li>
+            <article class="rounded-md border border-[#f2f2f2] gap-4 flex flex-col p-4 h-full [@media(width<=700px)]:border-none [@media(width<=700px)]:shadow-[0_1px_1px_#f2f2f2] [@media(width<=700px)]:px-0 [@media(width<=700px)]:pt-0">
+              <header class="flex-1">
+                <h3 class="mb-1">
+                  <a
+                    href={url}
+                    title={`Ver el proyecto ${name}`}
+                    class="text-[#111] hover:underline"
+                  >
+                    {name}
+                  </a>
+                  {isActive && <span class="text-green-500">&bull;</span>}
+                  {github && (
+                    <a
+                      href={github}
+                      target="_blank"
+                      title={`Ver código fuente del proyecto ${name}`}
+                    >
+                      <GitHub class="size-4 ml-1" />
+                    </a>
+                  )}
+                </h3>
+                <p class="text-xs leading-5 mb-1">{description}</p>
+              </header>
+              <footer class="flex flex-wrap gap-1 text-[0.6rem]">
+                {highlights.map(highlight => (
+                  <span class="rounded-md bg-[#eee] text-[#444] text-xs font-medium px-2 py-1">
+                    {highlight}
+                  </span>
+                ))}
+              </footer>
+            </article>
+          </li>
+        )
+      )
     }
   </ul>
 </Section>

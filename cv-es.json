@@ -1,18 +1,19 @@
 {
   "basics": {
     "name": "Mario Ponce Polo",
-    "label": "Full Stack Developer",
+    "label": "Full Stack Developer • JavaScript Developer",
     "image": "./Avatar.webp",
     "email": "mario@mpondev.com",
     "phone": "(34) 670283093",
     "url": "https://mpondev.com",
-    "summary": "A summary of Mario Ponce…",
+    "summary": "Estudié Administración y Dirección de Empresas, y desde 2001 tengo mi propia empresa de importación y venta al por mayor de artículos de regalo. Desde hace más de 5 años me he formado como programador",
     "location": {
-      "address": "C/ Palleter, 13",
+      "address": "",
       "postalCode": "46008",
       "city": "Valencia",
-      "countryCode": "ES",
-      "region": "España"
+      "region": "Valencia",
+      "country": "España",
+      "countryCode": "ES"
     },
     "profiles": [
       {
@@ -29,20 +30,19 @@
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "name": "Ibersoni Iluminación y Regalo, S.L.",
+      "position": "Gerente",
+      "url": "https://www.ibersoni.com",
+      "startDate": "2001-09-01",
       "summary": "Description…",
       "highlights": ["Started the company"]
     },
     {
-      "name": "Company 2",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
+      "name": "McDonald's",
+      "position": "Floor Manager",
+      "url": "https://www.mcdonalds.com/gb/en-gb/location/westminster/main-concourse/8261011.html",
+      "startDate": "2000-08-01",
+      "endDate": "2001-06-30",
       "summary": "Description…",
       "highlights": ["Started the company"]
     }
@@ -60,14 +60,14 @@
   ],
   "education": [
     {
-      "institution": "University",
-      "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "institution": "Universidad de Navarra",
+      "url": "https://www.unav.edu/",
+      "area": "Administración y Dirección de Empresas",
+      "studyType": "Licenciatura",
+      "startDate": "1994-09-01",
+      "endDate": "1999-06-01",
+      "score": "",
+      "courses": [""]
     }
   ],
   "awards": [
@@ -98,22 +98,22 @@
   "skills": [
     {
       "name": "HTML5",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend"]
     },
     {
       "name": "CSS",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
     },
     {
       "name": "JavaScript",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "Tailwind",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": [
         "Desarrollo Web",
         "Frontend",
@@ -128,7 +128,7 @@
     },
     {
       "name": "MongoDB",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": [
         "Bases de Datos",
         "Almacenamiento de Datos",
@@ -138,12 +138,12 @@
     },
     {
       "name": "Git",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
     },
     {
       "name": "GitHub",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": [
         "Control de Versiones",
         "Colaboración",
@@ -153,18 +153,18 @@
     },
     {
       "name": "React",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
     }
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Nativo"
     },
     {
       "language": "English",
-      "fluency": "Advanced"
+      "fluency": "Avanzado"
     }
   ],
   "interests": [

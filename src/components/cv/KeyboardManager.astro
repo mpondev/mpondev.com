@@ -1,5 +1,5 @@
 ---
-import 'hotkeypad/reset.css';
+// import 'hotkeypad/reset.css';
 import 'hotkeypad/index.css';
 import { basics } from '@/cv';
 import type { SocialIcon } from '@/types';
@@ -50,20 +50,19 @@ const profilesInfo = profiles.map(({ network, url }) => {
 ---
 
 <footer
-  class="fixed bottom-0 w-full border-t border-t-gray-200 bg-gray-50 px-4 py-2 text-center text-sm [@media(max-width:600px)]:hidden [@media(min-width:601px)]:block"
+  class="fixed bottom-0 w-full border-t border-t-neutral-200 bg-neutral-50 px-4 py-2 text-center text-sm [@media(max-width:600px)]:hidden [@media(min-width:601px)]:block"
 >
-  Pulsa <kbd class="rounded bg-gray-200 px-1 py-[2px] text-xs">Cmd</kbd> + <kbd
-    class="rounded bg-gray-200 px-1 py-[2px] text-xs">K</kbd
+  Pulsa <kbd class="rounded bg-neutral-200 px-1 py-[2px] text-xs">Cmd</kbd> + <kbd
+    class="rounded bg-neutral-200 px-1 py-[2px] text-xs">K</kbd
   > para abrir la paleta de comandos.
 </footer>
 
 <div
   id="footer-button"
-  class="fixed bottom-3 right-3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white [@media(min-width:601px)]:hidden"
+  class="fixed bottom-3 right-3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-neutral-200 bg-white [@media(min-width:601px)]:hidden"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="icon icon-tabler icon-tabler-command"
     width="32"
     height="32"
     viewBox="0 0 24 24"
@@ -89,6 +88,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 </div>
 
 <script>
+  // @ts-ignore
   import HotKeyPad from 'hotkeypad';
 
   interface Info {

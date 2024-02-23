@@ -41,7 +41,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
         <WorldMap />
         {city}, {region}
       </span>
-      <footer class="hidden text-[0.65rem] text-zinc-600 print:block">
+      <footer class="hidden text-[0.65rem] text-neutral-600 print:block">
         {printInfo}
       </footer>
       <footer class="flex gap-1 mt-2 print:hidden">
@@ -49,7 +49,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
           email && (
             <a
               href={`mailto:${email}`}
-              class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-gray-200"
+              class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-neutral-200"
               title={`Enviar un correo electrónico a ${name} a la dirección ${email}`}
               target="_blank"
               rel="noopener no referrer"
@@ -62,7 +62,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
           phone && (
             <a
               href={`tel:${phone}`}
-              class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-gray-200"
+              class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-neutral-200"
               title={`Llamar por teléfono a ${name} al número ${phone}`}
               target="_blank"
               rel="noopener no referrer"
@@ -78,7 +78,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
             return (
               <a
                 href={url}
-                class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-gray-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-gray-200"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 p-1 text-neutral-500 transition hover:border-neutral-300 hover:bg-neutral-200"
                 title={`Visitar el perfil de ${name} en ${network}`}
                 target="_blank"
                 rel="noopener noreferrer"

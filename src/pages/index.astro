@@ -10,13 +10,15 @@ import AboutMe from '@/components/AboutMe.astro';
 import LinkedInIcon from '@/icons/LinkedIn.astro';
 import GitHubIcon from '@/icons/GitHub.astro';
 import MailIcon from '@/icons/Mail.astro';
+import CVIcon from '@/icons/CV.astro';
 import CodeIcon from '@/icons/Code.astro';
 import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
 ---
 
 <Layout
   title="Portfolio de mpondev - Desarrollador y Programador Web"
-  description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web. Especializado en crear aplicaciones únicas">
+  description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web. Especializado en crear aplicaciones únicas"
+>
   <main class="px-4">
     <SectionContainer id="top" class="py-44 pb-32">
       <img
@@ -25,17 +27,20 @@ import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
         alt="mpondev photo"
       />
       <h1
-        class="md:text-4xl flex flex-row gap-x-2 pb-6 text-3xl font-bold text-white lg:pb-10 lg:text-5xl">
+        class="md:text-4xl flex flex-row gap-x-2 pb-6 text-3xl font-bold text-white lg:pb-10 lg:text-5xl"
+      >
         Hey, soy Mario Ponce<a
           href="https://www.linkedin.com/in/mario-ponce-04920619/"
           target="_blank"
           rel="noopener"
-          class="flex justify-center items-center hover:scale-105 transition">
+          class="flex justify-center items-center hover:scale-105 transition"
+        >
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
       <h2
-        class="text-wrap text-xl lg:text-2xl max-w-[700px] text-black dark:text-white">
+        class="text-wrap text-xl lg:text-2xl max-w-[700px] text-black dark:text-white"
+      >
         <span class="text-primary-800 dark:text-primary-200"
           >Desarrollador Web Fullstack.</span
         >
@@ -58,12 +63,17 @@ import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
           <MailIcon class="size-5 md:size-4" />
           mario@mpondev.com
         </SocialPill>
+        <SocialPill href="/cv">
+          <CVIcon class="size-5 md:size-4" />
+          CV
+        </SocialPill>
       </nav>
     </SectionContainer>
 
     <SectionContainer id="proyectos">
       <h2
-        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold text-black/80 dark:text-white/80">
+        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold text-black/80 dark:text-white/80"
+      >
         <CodeIcon class="size-7" />Proyectos
       </h2>
       <Projects />
@@ -71,7 +81,8 @@ import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
 
     <SectionContainer id="sobre-mi">
       <h2
-        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold text-black/80 dark:text-white/80">
+        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold text-black/80 dark:text-white/80"
+      >
         <ProfileCheckIcon class="size-7" /> Sobre mí
       </h2>
       <AboutMe />

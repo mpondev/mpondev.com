@@ -3,25 +3,55 @@ import LinkButton from './LinkButton.astro';
 
 import GitHubIcon from '@/icons/GitHub.astro';
 import WorldWideWebIcon from '@/icons/WorldWideWeb.astro';
-import ReactIcon from '@/icons/skills/React.astro';
-import ReduxIcon from '@/icons/skills/Redux.astro';
+import CSSModulesIcon from '@/icons/skills/CSSModules.astro';
+import HTML5Icon from '@/icons/skills/HTML5.astro';
+import JavaScriptIcon from '@/icons/skills/JavaScript.astro';
 import MongoDBIcon from '@/icons/skills/MongoDB.astro';
+import NodeIcon from '@/icons/skills/Node.astro';
+import ReactIcon from '@/icons/skills/React.astro';
+import ReactRouterIcon from '@/icons/skills/ReactRouter.astro';
+import ReduxIcon from '@/icons/skills/Redux.astro';
 
 const TAGS = {
-  REACT: {
-    name: 'React',
+  CSSMODULES: {
+    name: 'CSS Modules',
     class: 'bg-[#23272F] text-white',
-    icon: ReactIcon,
+    icon: CSSModulesIcon,
   },
-  REDUX: {
-    name: 'Redux',
+  HTML5: {
+    name: 'HTML5',
     class: 'bg-[#23272F] text-white',
-    icon: ReduxIcon,
+    icon: HTML5Icon,
+  },
+  JAVASCRIPT: {
+    name: 'JavaScript',
+    class: 'bg-[#23272F] text-white',
+    icon: JavaScriptIcon,
   },
   MONGODB: {
     name: 'MongoDB',
     class: 'bg-[#23272F] text-white',
     icon: MongoDBIcon,
+  },
+  NODE: {
+    name: 'Node.js',
+    class: 'bg-[#23272F] text-white',
+    icon: NodeIcon,
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-[#23272F] text-white',
+    icon: ReactIcon,
+  },
+  REACTROUTER: {
+    name: 'React Router',
+    class: 'bg-[#23272F] text-white',
+    icon: ReactRouterIcon,
+  },
+  REDUX: {
+    name: 'Redux',
+    class: 'bg-[#23272F] text-white',
+    icon: ReduxIcon,
   },
 };
 
@@ -35,6 +65,23 @@ const PROJECTS = [
     image: '/projects/ProShop.webp',
     tags: [TAGS.REACT, TAGS.REDUX, TAGS.MONGODB],
   },
+  {
+    title: 'HeyWorld',
+    description:
+      'Realiza un seguimiento de todas las ciudades que visitas: añade ciudades a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimina ciudades, consulta la lista de ciudades y países en los que has estado...',
+    link: 'https://heyworld.mpondev.com',
+    github: 'https://github.com/mpondev/heyworld',
+    image: '/projects/Heyworld.webp',
+    tags: [
+      TAGS.HTML5,
+      TAGS.CSSMODULES,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.REACTROUTER,
+      TAGS.MONGODB,
+      TAGS.NODE,
+    ],
+  },
 ];
 ---
 
@@ -45,12 +92,13 @@ const PROJECTS = [
         <h3 class="mb-2 text-2xl font-semibold text-primary-800 dark:text-primary-200">
           {title}
         </h3>
-        <p class="mb-4 text-pretty text-lg">{description}</p>
+        <p class="mb-6 text-pretty text-lg">{description}</p>
         <ul class="mb-2 flex flex-row gap-x-2">
           {tags.map(tag => (
             <li>
               <span
-                class={`${tag.class} flex gap-x-2 rounded-full border border-white/10 px-2 py-1 text-xs`}>
+                class={`${tag.class} flex gap-x-2 rounded-full border border-white/10 px-2 py-1 text-xs`}
+              >
                 <tag.icon class="size-4" />
                 {tag.name}
               </span>

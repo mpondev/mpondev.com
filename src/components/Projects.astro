@@ -3,6 +3,7 @@ import LinkButton from './LinkButton.astro';
 
 import GitHubIcon from '@/icons/GitHub.astro';
 import WorldWideWebIcon from '@/icons/WorldWideWeb.astro';
+import CSSIcon from '@/icons/skills/CSS.astro';
 import CSSModulesIcon from '@/icons/skills/CSSModules.astro';
 import HTML5Icon from '@/icons/skills/HTML5.astro';
 import JavaScriptIcon from '@/icons/skills/JavaScript.astro';
@@ -13,6 +14,11 @@ import ReactRouterIcon from '@/icons/skills/ReactRouter.astro';
 import ReduxIcon from '@/icons/skills/Redux.astro';
 
 const TAGS = {
+  CSS: {
+    name: 'CSS3',
+    class: 'bg-[#23272F] text-white',
+    icon: CSSIcon,
+  },
   CSSMODULES: {
     name: 'CSS Modules',
     class: 'bg-[#23272F] text-white',
@@ -59,11 +65,20 @@ const PROJECTS = [
   {
     title: 'ProShop',
     description:
-      'Full-featured shopping cart with PayPal and credit/debit payments.',
+      'Plataforma de comercio electrónico con todas las funcionalidades: carrito de la compra, búsqueda de productos, área de administradores de producto y usuarios, integración con PayPal y pago con tarjetas de crédito/débito, seguimiento de pedidos...',
     link: 'https://proshop.mpondev.com',
     github: 'https://github.com/mpondev/proshop',
     image: '/projects/ProShop.webp',
-    tags: [TAGS.REACT, TAGS.REDUX, TAGS.MONGODB],
+    tags: [
+      TAGS.HTML5,
+      TAGS.CSS,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.REACTROUTER,
+      TAGS.REDUX,
+      TAGS.MONGODB,
+      TAGS.NODE,
+    ],
   },
   {
     title: 'HeyWorld',
@@ -97,7 +112,7 @@ const PROJECTS = [
           {tags.map(tag => (
             <li>
               <span
-                class={`${tag.class} flex gap-x-2 rounded-full border border-white/10 px-2 py-1 text-xs`}
+                class={`${tag.class} flex gap-x-2 rounded-full border border-white/10 px-2 py-1 text-xs whitespace-nowrap`}
               >
                 <tag.icon class="size-4" />
                 {tag.name}

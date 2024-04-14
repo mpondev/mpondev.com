@@ -12,6 +12,8 @@ import NodeIcon from '@/icons/skills/Node.astro';
 import ReactIcon from '@/icons/skills/React.astro';
 import ReactRouterIcon from '@/icons/skills/ReactRouter.astro';
 import ReduxIcon from '@/icons/skills/Redux.astro';
+import SassIcon from '@/icons/skills/Sass.astro';
+import SupabaseIcon from '@/icons/skills/Supabase.astro';
 
 const TAGS = {
   CSS: {
@@ -59,9 +61,36 @@ const TAGS = {
     class: 'bg-[#23272F] text-white',
     icon: ReduxIcon,
   },
+  SASS: {
+    name: 'Sass',
+    class: 'bg-[#23272F] text-white',
+    icon: SassIcon,
+  },
+  SUPABASE: {
+    name: 'Supabase',
+    class: 'bg-[#23272F] text-white',
+    icon: SupabaseIcon,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: 'Apartamentos Caterina',
+    description:
+      'App de gestión de apartamentos: creación de nuevos usuarios (empleados), tablas de apartamentos y reservas con filtrado y ordenación de las mismas, gestión de pagos, llegadas y salidas, panel de control y edición de los ajustes básicos...',
+    link: 'https://caterina.mpondev.com',
+    github: 'https://github.com/mpondev/caterina',
+    image: '/projects/Caterina.webp',
+    tags: [
+      TAGS.HTML5,
+      TAGS.CSS,
+      TAGS.SASS,
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.REACTROUTER,
+      TAGS.SUPABASE,
+    ],
+  },
   {
     title: 'ProShop',
     description:

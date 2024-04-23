@@ -1,73 +1,22 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 
-import Badge from '@/components/Badge.astro';
-import SocialPill from '@/components/SocialPill.astro';
-import SectionContainer from '@/components/SectionContainer.astro';
-import Projects from '@/components/Projects.astro';
 import AboutMe from '@/components/AboutMe.astro';
+import Projects from '@/components/Projects.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
 
-import LinkedInIcon from '@/icons/LinkedIn.astro';
-import GitHubIcon from '@/icons/GitHub.astro';
-import MailIcon from '@/icons/Mail.astro';
-import CVIcon from '@/icons/CV.astro';
 import CodeIcon from '@/icons/Code.astro';
 import ProfileCheckIcon from '@/icons/ProfileCheck.astro';
+import Hero from '@/components/Hero.astro';
 ---
 
 <Layout
   title="Portfolio de mpondev - Desarrollador y Programador Web"
-  description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web. Especializado en crear aplicaciones únicas"
+  description="Contrata a mpondev para crear tu aplicación web o móvil. Desarrollador web."
 >
   <main class="px-4">
     <SectionContainer id="top" class="py-44 pb-32">
-      <img
-        class="rounded-full size-16 mb-4"
-        src="./Avatar.webp"
-        alt="mpondev photo"
-      />
-      <h1
-        class="md:text-4xl flex flex-row gap-x-2 pb-6 text-3xl font-bold text-white lg:pb-10 lg:text-5xl"
-      >
-        Hey, soy Mario Ponce<a
-          href="https://www.linkedin.com/in/mario-ponce-04920619/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center hover:scale-105 transition"
-        >
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </h1>
-      <h2
-        class="text-wrap text-xl lg:text-2xl max-w-[700px] text-black dark:text-white"
-      >
-        <span class="text-primary-800 dark:text-primary-200"
-          >Desarrollador Web Fullstack.</span
-        >
-        <span class="text-red-800 dark:text-red-200">De Valencia, España.</span>
-        <span class="text-sky-800 dark:text-sky-200"
-          >Especializado en crear aplicaciones únicas</span
-        >
-      </h2>
-
-      <nav class="mt-8 flex gap-x-4 flex-wrap">
-        <SocialPill href="https://www.linkedin.com/in/mario-ponce-04920619/">
-          <LinkedInIcon class="size-5 md:size-4" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/mpondev">
-          <GitHubIcon class="size-5 md:size-4" />
-          GitHub
-        </SocialPill>
-        <SocialPill href="mailto:mario@mpondev.com">
-          <MailIcon class="size-5 md:size-4" />
-          mario@mpondev.com
-        </SocialPill>
-        <SocialPill href="/cv">
-          <CVIcon class="size-5 md:size-4" />
-          CV
-        </SocialPill>
-      </nav>
+      <Hero />
     </SectionContainer>
 
     <SectionContainer id="proyectos">

@@ -1,0 +1,59 @@
+---
+import Badge from './Badge.astro';
+import SocialPill from './SocialPill.astro';
+
+import CVIcon from '@/icons/CV.astro';
+import GitHubIcon from '@/icons/GitHub.astro';
+import LinkedInIcon from '@/icons/LinkedIn.astro';
+import MailIcon from '@/icons/Mail.astro';
+---
+
+<div>
+  <div class="mb-4 flex gap-4">
+    <img
+      class="size-16 rounded-full shadow-lg"
+      src="./Avatar.webp"
+      alt="mpondev photo"
+    />
+    <a
+      href="https://www.linkedin.com/in/mario-ponce-04920619/"
+      target="_blank"
+      rel="noopener"
+      class="flex justify-center items-center hover:scale-105 transition"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+
+  <h1
+    class="md:text-4xl flex flex-row gap-x-2 pb-6 text-3xl font-bold text-gray-800 dark:text-white lg:pb-10 lg:text-5xl"
+  >
+    Hey, soy Mario Ponce
+  </h1>
+  <p class="text-xl lg:text-2xl max-w-[700px] text-black dark:text-white">
+    <span class="text-primary-400">Desarrollador Web Fullstack. </span>De
+    Valencia, España. Especializado en React y JavaScript.
+  </p>
+
+  <nav class="mt-8 flex flex-wrap gap-4">
+    <SocialPill href="https://www.linkedin.com/in/mario-ponce-04920619/">
+      <LinkedInIcon class="size-5 md:size-4" />
+      LinkedIn
+    </SocialPill>
+
+    <SocialPill href="https://github.com/mpondev">
+      <GitHubIcon class="size-5 md:size-4" />
+      GitHub
+    </SocialPill>
+
+    <SocialPill href="mailto:mario@mpondev.com">
+      <MailIcon class="size-5 md:size-4" />
+      mario@mpondev.com
+    </SocialPill>
+
+    <SocialPill href="/cv">
+      <CVIcon class="size-5 md:size-4" />
+      CV
+    </SocialPill>
+  </nav>
+</div>

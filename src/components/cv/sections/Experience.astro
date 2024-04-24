@@ -24,7 +24,7 @@ import { work } from '@/cv';
                         href={url}
                         title={`Ver ${name}`}
                         target="_blank"
-                        class="text-gray-950"
+                        class="text-gray-950 hover:underline"
                       >
                         {name}
                       </a>
@@ -32,9 +32,23 @@ import { work } from '@/cv';
                     <h4 class="font-normal text-neutral-900">{position}</h4>
                   </div>
 
-                  <time class="min-w-24 text-sm text-neutral-600 [@media(width<=700px)]:text-right">
-                    {years}
-                  </time>
+                  <div>
+                    <time
+                      class="min-w-24 cursor-default text-sm text-neutral-600 [@media(width<=700px)]:text-right"
+                      datetime={startDate}
+                      data-title={startDate}
+                    >
+                      {startYear}
+                    </time>
+                    {' - '}
+                    <time
+                      class="min-w-24 cursor-default text-sm text-neutral-600 [@media(width<=700px)]:text-right"
+                      datetime={endDate}
+                      data-title={endDate}
+                    >
+                      {endYear}
+                    </time>
+                  </div>
                 </header>
 
                 <footer>

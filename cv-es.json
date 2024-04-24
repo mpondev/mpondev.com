@@ -1,5 +1,6 @@
 {
   "basics": {
+    "cvTitle": "CV de mpondev",
     "name": "Mario Ponce Polo",
     "label": "Full Stack Developer • JavaScript Developer",
     "image": "./Avatar.webp",
@@ -107,9 +108,14 @@
       "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
     },
     {
-      "name": "JavaScript",
+      "name": "Sass",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "CSSModules",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
     },
     {
       "name": "Tailwind",
@@ -122,9 +128,29 @@
       ]
     },
     {
+      "name": "JavaScript",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "ReactRouter",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
       "name": "Node",
       "level": "Medio",
       "keywords": ["Desarrollo Web", "JavaScript", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Express",
+      "level": "Medio",
+      "keywords": ["Node", "Backend", "JavaScript"]
     },
     {
       "name": "MongoDB",
@@ -150,16 +176,6 @@
         "Código Fuente",
         "Git"
       ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
-    },
-    {
-      "name": "Express",
-      "level": "Medio",
-      "keywords": ["Node", "Backend", "JavaScript"]
     }
   ],
   "languages": [

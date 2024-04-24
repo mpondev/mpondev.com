@@ -1,20 +1,14 @@
 ---
 import { basics } from '@/cv';
 
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
-
-const { image, summary } = basics;
+const { cvTitle, image, summary } = basics;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>{title}</title>
+    <title>{cvTitle}</title>
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

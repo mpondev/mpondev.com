@@ -3,6 +3,7 @@ import Section from '@/components/cv/Section.astro';
 import { skills } from '@/cv';
 
 import CSS from '@/icons/skills/CSS.astro';
+import CSSModules from '@/icons/skills/CSSModules.astro';
 import Express from '@/icons/skills/Express.astro';
 import Git from '@/icons/skills/Git.astro';
 import GitHub from '@/icons/GitHub.astro';
@@ -18,6 +19,7 @@ import Tailwind from '@/icons/skills/Tailwind.astro';
 
 const SKILL_ICONS: Record<string, any> = {
   CSS,
+  CSSModules,
   Express,
   Git,
   GitHub,
@@ -42,7 +44,12 @@ const SKILL_ICONS: Record<string, any> = {
 
         return (
           <li class="flex items-center gap-1 rounded-md bg-neutral-200 px-2 py-1 text-[0.8rem] font-medium text-black">
-            {Icon && <Icon class="size-4" />} <span>{name}</span>
+            {Icon && (
+              <Icon
+                class={`${iconName === 'CSSModules' || iconName === 'Express' ? 'invert' : ''} size-4`}
+              />
+            )}{' '}
+            <span>{name}</span>
           </li>
         );
       })

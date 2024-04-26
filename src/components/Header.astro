@@ -4,22 +4,27 @@ import ThemeToggle from './ThemeToggle.astro';
 const navItems = [
   {
     title: 'Inicio',
+    label: 'inicio',
     url: '/#top',
   },
   {
     title: 'Proyectos',
+    label: 'proyectos',
     url: '/#proyectos',
   },
   {
     title: 'Sobre mí',
+    label: 'sobre-mi',
     url: '/#sobre-mi',
   },
   {
     title: 'Contacto',
-    url: '/#contacto',
+    label: 'contacto',
+    url: 'mailto:mario@mpondev.com',
   },
   {
     title: 'CV',
+    label: 'cv',
     url: '/cv',
     target: '_blank',
   },
@@ -28,15 +33,16 @@ const navItems = [
 
 <header
   id="header-nav"
-  class="sticky top-0 z-10 mx-auto flex w-auto items-center justify-center gap-x-3 py-5 xl:w-[800px]"
+  class="fixed top-0 z-10 mx-auto mt-2 flex w-full items-center justify-center"
 >
   <nav
-    class="flex flex-row items-center rounded-lg border border-black bg-black/30 px-2 py-1 backdrop-blur-2xl"
+    class="flex items-center justify-center rounded-full px-3 text-sm font-medium text-gray-400"
   >
     {
       navItems.map(navItem => (
         <a
-          class="rounded-md px-2 text-sm transition hover:bg-neutral-300 dark:hover:bg-white/10 sm:px-3 sm:text-base"
+          class="relative block px-2 py-2 transition hover:text-primary-400 sm:px-3 sm:text-base"
+          aria-label={navItem.label}
           href={navItem.url}
           target={navItem.target}
         >
@@ -44,6 +50,62 @@ const navItems = [
         </a>
       ))
     }
+    <ThemeToggle />
   </nav>
-  <ThemeToggle />
 </header>
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('header nav a');
+
+    const callback = (entries: any[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navItems.forEach(item => {
+            if (item.getAttribute('aria-label') == entry.target.id) {
+              item.classList.add('link-active');
+            } else {
+              item.classList.remove('link-active');
+            }
+          });
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.3,
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Cleanup function
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === 'hidden') {
+        observer.disconnect();
+      } else {
+        sections.forEach(section => {
+          observer.observe(section);
+        });
+      }
+    };
+  });
+</script>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur bg-gray-800/90 ring-white/10;
+    }
+  }
+</style>

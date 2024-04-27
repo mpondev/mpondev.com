@@ -9,7 +9,8 @@ const THEMES = ['Light', 'Dark', 'System'];
 <div class="relative ml-1 mr-1">
   <button
     id="theme-toggle-btn"
-    class="flex appearance-none border-none transition hover:scale-125">
+    class="flex appearance-none border-none transition hover:scale-125"
+  >
     <span class="sr-only">Elige el tema</span>
     <SunIcon id="light" class="theme-toggle-icon size-5 transition-all" />
     <MoonIcon
@@ -24,7 +25,8 @@ const THEMES = ['Light', 'Dark', 'System'];
 
   <div
     id="themes-menu"
-    class="scale-80 absolute right-0 top-8 min-w-[8rem] rounded-md border border-gray-100 bg-white/70 p-1 text-sm opacity-0 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md dark:border-gray-500/20 dark:bg-gray-900/70">
+    class="scale-80 hidden absolute right-0 top-8 min-w-[8rem] rounded-md border border-gray-100 bg-white/70 p-1 text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md dark:border-gray-500/20 dark:bg-gray-900/70"
+  >
     <ul>
       {
         THEMES.map(theme => (
@@ -39,6 +41,7 @@ const THEMES = ['Light', 'Dark', 'System'];
 
 <style>
   #themes-menu.open {
+    display: inline;
     animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 

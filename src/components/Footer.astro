@@ -3,15 +3,18 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer
-  class="m-4 mx-auto mb-10 flex w-full justify-center rounded-lg bg-black/5 shadow backdrop-blur-lg dark:bg-black/10 xl:w-[1120px]">
+  class="container m-4 mx-auto mb-10 flex w-full justify-center border-t border-zinc-800 md:max-w-2xl lg:max-w-4xl"
+>
   <div
-    class="mx-auto w-full max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    class="mx-auto w-full max-w-screen-xl py-4 md:flex md:items-center md:justify-between"
+  >
     <span class="text-sm text-primary-800 dark:text-primary-300 sm:text-center"
       >© {currentYear}
       <a href="https://mpondev.com" class="hover:underline">mpondev</a></span
     >
     <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
+      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
+    >
       <li>
         <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
       </li>

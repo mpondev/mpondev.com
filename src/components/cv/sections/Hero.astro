@@ -11,7 +11,7 @@ import WorldMap from '@/icons/WorldMap.astro';
 import type { SocialIcon } from '@/types';
 
 const { label, name, image, location, profiles, phone, email } = basics;
-const { city, region } = location;
+const { city, region, country } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
@@ -39,7 +39,7 @@ const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(` • `);
         class="flex items-center gap-1 text-sm tracking-tight text-neutral-500"
       >
         <WorldMap />
-        {city}, {region}
+        {city}, {country}
       </span>
       <footer class="hidden text-[0.65rem] text-neutral-600 print:block">
         {printInfo}

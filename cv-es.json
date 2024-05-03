@@ -202,50 +202,34 @@
   ],
   "projects": [
     {
-      "name": "Project1",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016", "Won award at AIHacks 2017"],
-      "url": "https://project.com/",
-      "isActive": true,
-      "github": "https://mpondev.com"
+      "name": "Apartamentos Caterina",
+      "startDate": "2024-03-15",
+      "endDate": "2024-04-13",
+      "description": "App de gestión de apartamentos: creación de nuevos usuarios (empleados), tablas de apartamentos y reservas con filtrado y ordenación de las mismas, gestión de pagos, llegadas y salidas, panel de control y edición de los ajustes básicos...",
+      "highlights": [],
+      "url": "https://caterina.mpondev.com",
+      "isActive": false,
+      "github": "https://github.com/mpondev/caterina"
     },
     {
-      "name": "Project2",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/",
-      "isActive": true
+      "name": "ProShop",
+      "startDate": "2023-07-24",
+      "endDate": "2024-03-11",
+      "description": "Plataforma de comercio electrónico con todas las funcionalidades: carrito de la compra, búsqueda de productos, área de administradores de producto y usuarios, integración con PayPal y pago con tarjetas de crédito/débito, seguimiento de pedidos...",
+      "highlights": [],
+      "url": "https://proshop.mpondev.com",
+      "isActive": false,
+      "github": "https://github.com/mpondev/proshop"
     },
     {
-      "name": "Project3",
+      "name": "HeyWorld",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/",
-      "isActive": false
-    },
-    {
-      "name": "Project4",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/",
-      "isActive": true
-    },
-    {
-      "name": "Project5",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/",
-      "isActive": false
+      "description": "Realiza un seguimiento de todas las ciudades que visitas: añade ciudades a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimina ciudades, consulta la lista de ciudades y países en los que has estado...",
+      "highlights": [],
+      "url": "https://heyworld.mpondev.com",
+      "isActive": false,
+      "github": "https://github.com/mpondev/HeyWorld"
     }
   ]
 }

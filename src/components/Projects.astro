@@ -112,7 +112,7 @@ const PROJECTS = [
   {
     title: 'HeyWorld',
     description:
-      'Realiza un seguimiento de todas las ciudades que visitas: añade ciudades a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimina ciudades, consulta la lista de ciudades y países en los que has estado...',
+      'Realiza un seguimiento de todas las ciudades que visitas: añade ciudades a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimina lugares, consulta el listado de los sitios y países en los que has estado...',
     link: 'https://heyworld.mpondev.com',
     github: 'https://github.com/mpondev/HeyWorld',
     image: '/projects/Heyworld.webp',
@@ -133,11 +133,11 @@ const PROJECTS = [
   {
     PROJECTS.map(({ description, github, image, link, tags, title }) => (
       <article>
-        <h3 class="mb-2 text-2xl font-semibold text-primary-800 dark:text-primary-200">
+        <h3 class="mb-2 text-2xl font-semibold text-primary-600 dark:text-primary-200">
           {title}
         </h3>
         <p class="mb-6 text-pretty text-lg">{description}</p>
-        <ul class="mb-2 flex flex-row gap-x-2">
+        <ul class="mb-2 flex flex-row gap-2 pb-2 flex-wrap">
           {tags.map(tag => (
             <li>
               <span

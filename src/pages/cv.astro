@@ -5,11 +5,13 @@ import About from '@/components/cv/sections/About.astro';
 import Education from '@/components/cv/sections/Education.astro';
 import Experience from '@/components/cv/sections/Experience.astro';
 import Hero from '@/components/cv/sections/Hero.astro';
+import Languages from '@/components/cv/sections/Languages.astro';
 import Projects from '@/components/cv/sections/Projects.astro';
 import Skills from '@/components/cv/sections/Skills.astro';
 import KeyboardManager from '@/components/cv/KeyboardManager.astro';
 
 import { basics } from '@/cv';
+import Strengths from '@/components/cv/sections/Strengths.astro';
 const { name } = basics;
 ---
 
@@ -21,6 +23,8 @@ const { name } = basics;
     <Education />
     <Projects />
     <Skills />
+    <Strengths />
+    <Languages />
   </main>
 
   <KeyboardManager />

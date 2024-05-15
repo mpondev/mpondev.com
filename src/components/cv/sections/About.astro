@@ -6,7 +6,7 @@ const { summary } = basics;
 ---
 
 <Section title="Sobre mí">
-  <p>
-    {summary}
-  </p>
+  <ul>
+    {summary.map(el => <li class="mb-4">{el}</li>)}
+  </ul>
 </Section>

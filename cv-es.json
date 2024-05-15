@@ -7,7 +7,10 @@
     "email": "mario@mpondev.com",
     "phone": "(34) 670283093",
     "url": "https://mpondev.com",
-    "summary": "Estudié Administración y Dirección de Empresas, y desde 2001 tengo mi propia empresa de importación y venta al por mayor de artículos de regalo. Desde hace más de 5 años me he formado como programador",
+    "summary": [
+      "Estudié Administración y Dirección de Empresas y desde 2001 tengo mi empresa de importación y venta al por mayor de artículos de regalo. Soy un desarrollador web fullstack autodidacta. En 2014 empecé a formarme en HTML y continué con CSS, JavaScript, React, Node, MongoDB...",
+      "Mi pasión por la tecnología sumada a mi sed de conocimientos me ha equipado con una base sólida en principios y prácticas de desarrollo web."
+    ],
     "location": {
       "address": "",
       "postalCode": "46008",
@@ -35,16 +38,49 @@
       "position": "Gerente",
       "url": "https://www.ibersoni.com",
       "startDate": "2001-09-01",
-      "summary": "Description…",
+      "summary": [
+        "Planificación financiera, incluyendo análisis y control de costos y relaciones con los bancos.",
+        "Planificación estratégica de la compañía.",
+        "Coordinación y liderazgo del equipo de hasta 10 personas.",
+        "Implementación y asistencia al desarrollo de las aplicaciones informáticas en todos los ámbitos de la empresa.",
+        "Gestión de compras y asistencia a Ferias internacionales.",
+        "Organización y montaje de stand propio en Intergift (IFEMA) durante 15 años."
+      ],
       "highlights": ["Started the company"]
     },
     {
-      "name": "McDonald's",
+      "name": "Valencia Gifts",
+      "position": "Responsable de Compras y Tecnologías",
+      "startDate": "2014-03-01",
+      "endDate": "2020-04-30",
+      "summary": [
+        "Implementación del sistema tecnológico en varias tiendas y almacén central mediante TPV Plus de Sage.",
+        "Capacitación del equipo en el uso eficaz de TPV Plus.",
+        "Planificación de compras y control de stock."
+      ],
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "Point Break Iberia, S.L.",
+      "position": "Responsable de CRM y Tecnologías",
+      "startDate": "2010-02-01",
+      "endDate": "2012-06-22",
+      "summary": [
+        "Desarrollo e implementación de estrategias efectivas de gestión de relaciones con los clientes (CRM).",
+        "Capacitación del equipo en el uso eficaz de Zoho CRM."
+      ],
+      "highlights": ["Started the company"]
+    },
+    {
+      "name": "McDonald's, Victoria Station (London)",
       "position": "Floor Manager",
       "url": "https://www.mcdonalds.com/gb/en-gb/location/westminster/main-concourse/8261011.html",
       "startDate": "2000-08-01",
       "endDate": "2001-06-30",
-      "summary": "Description…",
+      "summary": [
+        "Encargado de la zona de cocina.",
+        "Capacitación del equipo en las prácticas laborales correctas según los estándares de la compañía."
+      ],
       "highlights": ["Started the company"]
     }
   ],
@@ -180,11 +216,15 @@
   ],
   "languages": [
     {
-      "language": "Spanish",
+      "language": "Español",
       "fluency": "Nativo"
     },
     {
-      "language": "English",
+      "language": "Inglés",
+      "fluency": "Avanzado"
+    },
+    {
+      "language": "Valenciano",
       "fluency": "Avanzado"
     }
   ],
@@ -225,11 +265,18 @@
       "name": "HeyWorld",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Realiza un seguimiento de todas las ciudades que visitas: añade ciudades a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimina ciudades, consulta la lista de ciudades y países en los que has estado...",
+      "description": "Realiza un seguimiento de todas las ciudades que visitas: añade poblaciones a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimínalas, consulta la lista de ciudades y países en los que has estado...",
       "highlights": [],
       "url": "https://heyworld.mpondev.com",
       "isActive": false,
       "github": "https://github.com/mpondev/HeyWorld"
     }
+  ],
+  "strengths": [
+    "Learner",
+    "Habilidades digitales",
+    "Analítico",
+    "Proactivo",
+    "Flexible"
   ]
 }

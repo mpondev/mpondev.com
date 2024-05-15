@@ -1,0 +1,18 @@
+---
+import Section from '@/components/cv/Section.astro';
+
+import { languages } from 'cv-es.json';
+---
+
+<Section title="Idiomas">
+  <ul class="flex justify-between">
+    {
+      languages.map(({ language, fluency }) => (
+        <li class="">
+          <div class="text-neutral-950 font-medium">{language}</div>
+          <div class="text-neutral-500 font-medium text-sm">{fluency}</div>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

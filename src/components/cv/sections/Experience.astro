@@ -19,17 +19,17 @@ import { work } from '@/cv';
               <article>
                 <header class="mb-1 flex items-start justify-between">
                   <div>
-                    <h3 class="font-medium text-neutral-950">
+                    <h3 class="font-medium text-neutral-950">{position}</h3>
+                    <h4 class="font-normal text-neutral-900">
                       <a
                         href={url}
                         title={`Ver ${name}`}
                         target="_blank"
-                        class="text-gray-950 hover:underline"
+                        class="text-gray-900 hover:underline"
                       >
                         {name}
                       </a>
-                    </h3>
-                    <h4 class="font-normal text-neutral-900">{position}</h4>
+                    </h4>
                   </div>
 
                   <div>
@@ -51,9 +51,11 @@ import { work } from '@/cv';
                   </div>
                 </header>
 
-                <footer>
-                  <p>{summary}</p>
-                </footer>
+                <ul class="text-[#666] text-sm">
+                  {summary.map(el => (
+                    <li>{el}</li>
+                  ))}
+                </ul>
               </article>
             </li>
           );

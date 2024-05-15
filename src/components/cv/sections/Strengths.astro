@@ -1,0 +1,10 @@
+---
+import Section from '@/components/cv/Section.astro';
+import { strengths } from '@/cv';
+---
+
+<Section title="Fortalezas">
+  <ul>
+    {strengths.map(strength => <li>{strength}</li>)}
+  </ul>
+</Section>

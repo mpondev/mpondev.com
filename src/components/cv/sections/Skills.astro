@@ -36,14 +36,14 @@ const SKILL_ICONS: Record<string, any> = {
 ---
 
 <Section title="Habilidades">
-  <ul class="inline-flex flex-wrap gap-2">
+  <ul class="inline-flex flex-wrap gap-2 justify-between">
     {
       skills.map(({ name }) => {
         const iconName = name;
         const Icon = SKILL_ICONS[iconName];
 
         return (
-          <li class="flex items-center gap-1 rounded-md bg-neutral-200 px-2 py-1 text-[0.8rem] font-medium text-black">
+          <li class="flex items-center gap-1 rounded-md bg-neutral-200 px-2 py-1 text-[0.8rem] font-medium text-black" id="skills">
             {Icon && (
               <Icon
                 class={`${iconName === 'CSSModules' || iconName === 'Express' ? 'invert' : ''} size-4`}

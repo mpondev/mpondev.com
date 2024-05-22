@@ -3,12 +3,12 @@
     "cvTitle": "CV de mpondev",
     "name": "Mario Ponce Polo",
     "label": "Full Stack Developer • JavaScript Developer",
-    "image": "./Avatar.webp",
+    "image": "../Avatar.webp",
     "email": "mario@mpondev.com",
     "phone": "(34) 670283093",
     "url": "https://mpondev.com",
     "summary": [
-      "Estudié Administración y Dirección de Empresas y desde 2001 tengo mi empresa de importación y venta al por mayor de artículos de regalo. Soy un desarrollador web fullstack autodidacta. Desde 2014 he estado formándome continuamente en programación, adquiriendo conocimientos en HTML, CSS, JavScript, React, Node.js, MongoDB, SQL... entre otras competencias",
+      "Estudié Administración y Dirección de Empresas y desde 2001 tengo mi empresa de importación y venta al por mayor de artículos de regalo. Soy un desarrollador web fullstack autodidacta. Desde 2014 he estado formándome continuamente en programación, adquiriendo conocimientos en HTML, CSS, JavScript, React, Node.js, MongoDB, SQL... entre otras competencias.",
       "Mi pasión por la tecnología sumada a mi sed de conocimientos me ha equipado con una base sólida en principios y prácticas de desarrollo web.",
       "Me gustan prácticamente todos los deportes, en especial el montañismo y el rugby. Soy un lector voraz."
     ],
@@ -70,18 +70,6 @@
       "summary": [
         "Desarrollo e implementación de estrategias efectivas de gestión de relaciones con los clientes (CRM).",
         "Capacitación del equipo en el uso eficaz de Zoho CRM."
-      ],
-      "highlights": ["Started the company"]
-    },
-    {
-      "name": "McDonald's, Victoria Station (London)",
-      "position": "Floor Manager",
-      "url": "https://www.mcdonalds.com/gb/en-gb/location/westminster/main-concourse/8261011.html",
-      "startDate": "2000-08-01",
-      "endDate": "2001-06-30",
-      "summary": [
-        "Encargado de la zona de cocina.",
-        "Capacitación del equipo en las prácticas laborales correctas según los estándares de la compañía."
       ],
       "highlights": ["Started the company"]
     }
@@ -244,12 +232,13 @@
   ],
   "projects": [
     {
-      "name": "Apartamentos Caterina",
+      "name": "Caterina",
       "startDate": "2024-03-15",
       "endDate": "2024-04-13",
       "description": "App de gestión de apartamentos: creación de nuevos usuarios (empleados), tablas de apartamentos y reservas con filtrado y ordenación de las mismas, gestión de pagos, llegadas y salidas, panel de control y edición de los ajustes básicos...",
       "highlights": [],
       "url": "https://caterina.mpondev.com",
+      "qr": "../qr-caterina.png",
       "isActive": false,
       "github": "https://github.com/mpondev/caterina"
     },
@@ -260,6 +249,7 @@
       "description": "Plataforma de comercio electrónico con todas las funcionalidades: carrito de la compra, búsqueda de productos, área de administradores de producto y usuarios, integración con PayPal y pago con tarjetas de crédito/débito, seguimiento de pedidos...",
       "highlights": [],
       "url": "https://proshop.mpondev.com",
+      "qr": "../qr-proshop.png",
       "isActive": false,
       "github": "https://github.com/mpondev/proshop"
     },
@@ -270,6 +260,7 @@
       "description": "Realiza un seguimiento de todas las ciudades que visitas: añade poblaciones a tu lista haciendo clic en el mapa o usando tu posición actual, mostrando sus ubicaciones en un mapa. Elimínalas, consulta la lista de ciudades y países en los que has estado...",
       "highlights": [],
       "url": "https://heyworld.mpondev.com",
+      "qr": "../qr-heyworld.png",
       "isActive": false,
       "github": "https://github.com/mpondev/HeyWorld"
     }

@@ -4,7 +4,7 @@ import { strengths } from '@/cv';
 ---
 
 <Section title="Fortalezas">
-  <ul class="flex justify-between align-middle flex-wrap">
+  <ul class="flex items-center justify-between flex-wrap print:gap-2 print:justify-between">
     {strengths.map((strength, index) => {
       if (index < strengths.length - 1) {
         return (<li class="text-[#666] text-sm">{strength}</strenght></li><span class="text-[#666]">&bull;</span>)

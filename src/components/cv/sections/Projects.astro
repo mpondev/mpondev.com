@@ -6,12 +6,14 @@ import { projects } from '@/cv';
 ---
 
 <Section title="Proyectos">
-  <ul class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-4">
+  <ul
+    class="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-4 print:grid-cols-3"
+  >
     {
       projects.map(
-        ({ url, description, name, highlights, isActive, github }) => (
+        ({ url, description, name, highlights, isActive, github, qr }) => (
           <li>
-            <article class="flex h-full flex-col gap-4 rounded-md border border-neutral-100 p-4 [@media(width<=700px)]:border-none [@media(width<=700px)]:px-0 [@media(width<=700px)]:pt-0 [@media(width<=700px)]:shadow-[0_1px_1px_#f2f2f2]">
+            <article class="flex flex-col gap-4 rounded-md border border-neutral-100 p-4 [@media(width<=700px)]:border-none [@media(width<=700px)]:px-0 [@media(width<=700px)]:pt-0 [@media(width<=700px)]:shadow-[0_1px_1px_#f2f2f2] print:h-44 print:truncate">
               <header class="flex-1">
                 <h3 class="flex items-center justify-between mb-1">
                   <a
@@ -29,7 +31,12 @@ import { projects } from '@/cv';
                       target="_blank"
                       title={`Ver código fuente del proyecto ${name}`}
                     >
-                      <GitHub class="ml-1 size-4" />
+                      <GitHub class="ml-1 size-4 print:hidden" />
+                      <img
+                        src={qr}
+                        alt={`Ver código fuente del proyecto ${name}`}
+                        class="hidden h-8 w-8 print:block"
+                      />
                     </a>
                   )}
                 </h3>

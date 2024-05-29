@@ -8,7 +8,7 @@
     "phone": "(34) 670283093",
     "url": "https://mpondev.com",
     "summary": [
-      "Estudié Administración y Dirección de Empresas y desde 2001 tengo mi empresa de importación y venta al por mayor de artículos de regalo. Soy un desarrollador web fullstack autodidacta. Desde 2014 he estado formándome continuamente en programación, adquiriendo conocimientos en HTML, CSS, JavScript, React, Node.js, MongoDB, SQL... entre otras competencias.",
+      "Estudié Administración y Dirección de Empresas y desde 2001 tengo mi empresa de importación y venta al por mayor de artículos de regalo. Soy un desarrollador web fullstack autodidacta. Desde 2014 he estado formándome continuamente en programación, adquiriendo conocimientos en HTML, CSS, JavScript, TypeScript, React, Node.js, MongoDB, SQL... entre otras competencias.",
       "Mi pasión por la tecnología sumada a mi sed de conocimientos me ha equipado con una base sólida en principios y prácticas de desarrollo web.",
       "Me gustan prácticamente todos los deportes, en especial el montañismo y el rugby. Soy un lector voraz."
     ],
@@ -156,6 +156,11 @@
     {
       "name": "JavaScript",
       "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Medio",
       "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {

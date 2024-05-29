@@ -137,6 +137,18 @@ const PROJECTS = [
           {title}
         </h3>
         <p class="mb-6 text-pretty text-lg">{description}</p>
+        {title === 'Apartamentos Caterina' && (
+          <div class="mb-6 text-sm px-8 -mt-4">
+            <p>
+              Credenciales de prueba para acceder a la app:
+              <ul>
+                <li class="px-4">&bull; Dirección de email: john@email.com </li>
+                <li class="px-4">&bull; Contraseña: 1234qwer</li>
+              </ul>
+            </p>
+            <p>Alimentar la base de datos desde el panel inferior izquierdo.</p>
+          </div>
+        )}
         <ul class="mb-2 flex flex-row gap-2 pb-2 flex-wrap">
           {tags.map(tag => (
             <li>

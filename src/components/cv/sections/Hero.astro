@@ -12,7 +12,7 @@ import WorldWideWeb from '@/icons/WorldWideWeb.astro';
 import type { SocialIcon } from '@/types';
 
 const { email, image, label, location, name, phone, profiles, url } = basics;
-const { city, region, country } = location;
+const { city, country } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
@@ -86,7 +86,7 @@ const printInfo = [url, email, phone, linkedInUrl].filter(Boolean).join(` • `)
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network];
 
             return (
